@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',
+        sans-serif;
+}
+
+.container {
+    width: 100%;
+    color: #fff;
+    padding: 10px 80px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(20, 27, 124, 0.6), #3e25ace3),
+        url(images/bg-images.jpg);
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.logo h1 span {
+    color: #753ac7;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: right;
+    padding-right: 50px;
+}
+
+nav ul li {
+    margin: 0px 15px;
+    display: inline-block;
+}
+
+nav ul li::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #56249c;
+}
+
+nav ul li::after:hover {
+    width: 100%;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+    transition: 0.4s ease;
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #753ac7;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.btn a:hover {
+    background-color: #56249c;
+    color: #ddd;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.said-title {
+    margin-top: 160px;
+    max-width: 600px;
+}
+
+.image img {
+    margin-top: 120px;
+    border-radius: 5px;
+    width: 600px;
+}
+
+.said-title h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.said-title p {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.button a {
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #753ac7;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    display: inline-block;
+}
+
+.button a:hover {
+    background-color: #56249c;
+    color: #ddd;
+}
+
+.about-section {
+    padding: 20px 80px;
+}
+
+.title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.title h1 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title h1::before {
+    width: 148px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #56249c;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.images img {
+    width: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.my-salf {
+    width: 700px
+}
+
+.my-salf h1 {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.my-salf h1 span {
+    color: #56249c;
+}
+
+.my-salf p {
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width:1180px) {
+
+    .container {
+        width: 100%;
+        color: #fff;
+        padding: 10px 50px;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(20, 27, 124, 0.6), #3e25ace3),
+            url(images/bg-images.jpg);
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        display: none;
+        background-image: url(images/menu-images.png);
+    }
+
+    .btn a {
+        padding: 8px 18px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .said-title {
+        text-align: center;
+        margin-top: 80px;
+        max-width: auto;
+    }
+
+    .said-title h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .said-title p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .image img {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        width: 350px;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 400px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .my-salf {
+        width: 500px
+    }
+
+    .my-salf h1 {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .my-salf p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+}
